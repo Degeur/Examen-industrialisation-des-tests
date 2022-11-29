@@ -1,1 +1,1 @@
-# Examen-industrialisation-des-tests
+# Groupe : Pierrick Bauffe - Thibault Balleux
