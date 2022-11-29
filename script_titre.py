@@ -55,6 +55,7 @@ def test_reddit(driver, driver2, driver3):
         # print (url3)
         to_return.append(url3)
 
+    print(to_return)
     return to_return
 
 
