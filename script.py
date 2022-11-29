@@ -1,9 +1,8 @@
 import csv
-# ouverture en lecture du fichier csv
+import random
 with open('abilities.csv', newline='') as fichier:
-    # on crée un objet reader
     lecture = csv.reader(fichier, delimiter=',')
-
-    # lecture et affichage des lignes:
-    for ligne in lecture:
-        print(ligne)
+    lignes = list(lecture)
+for loop in range (10):
+    nombre = random.randint(0, len(lignes))
+    print(f"La ligne", nombre, " du fichier:", lignes[nombre])
