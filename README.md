@@ -1,10 +1,10 @@
 # Groupe : Pierrick Bauffe - Thibault Balleux
 
-● 1 Script python pour Github Actions
+● 1 Script python pour Github Actions --> script.py
 
-○ 3 fonctions Python (ou +) --> script.py, fonctions : charger() extraire() afficher()
+      ○ 3 fonctions Python (ou +) --> fonctions : charger() extraire() afficher()
 
-○ 3 tests (1 pour chaque fonctions)
+      ○ 3 tests (1 pour chaque fonctions)
 
 ● 2 Workflows Github (= 2 fichiers)
 
