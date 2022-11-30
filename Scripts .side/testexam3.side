@@ -1,0 +1,54 @@
+{
+  "id": "bddf455e-8761-4c67-812b-d99470635fa7",
+  "version": "2.0",
+  "name": "testexam3",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "68cd7e5f-35f9-4b51-a518-51d159b90bde",
+    "name": "test3",
+    "commands": [{
+      "id": "8ec6c295-ec2c-4da3-b91c-5b4bf04ffa1f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cd52a00-3a31-4284-ae2f-1bd2cccfdb79",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b62c6a11-84bb-48f8-be6d-1bb229cf41ed",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "YouTube",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "507e31f0-5f23-4592-b80f-25d4799a1446",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.style-scope:nth-child(1) > #items > .style-scope:nth-child(1) > #endpoint .title",
+      "targets": [
+        ["css=.style-scope:nth-child(1) > #items > .style-scope:nth-child(1) > #endpoint .title", "css:finder"],
+        ["xpath=//a[@id='endpoint']/tp-yt-paper-item/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//tp-yt-paper-item/yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'Accueil')]", "xpath:innerText"]
+      ],
+      "value": "Accueil"
+    }]
+  }],
+  "suites": [{
+    "id": "c3fbd529-4615-4cdb-8fb1-daa0fb778baa",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["68cd7e5f-35f9-4b51-a518-51d159b90bde"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}

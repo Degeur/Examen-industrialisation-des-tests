@@ -1,0 +1,75 @@
+{
+  "id": "d8a87106-789c-459c-82b0-21f4f2be225c",
+  "version": "2.0",
+  "name": "testexam2",
+  "url": "https://fr.wikipedia.org/wiki/Wikipédia:Accueil_principal",
+  "tests": [{
+    "id": "5fb8d36a-2729-4ea8-8efe-38e4149e512b",
+    "name": "Untitled",
+    "commands": [{
+      "id": "2bbb8cee-4d0d-4be6-85d5-8c34d497fb47",
+      "comment": "",
+      "command": "open",
+      "target": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df5cdacd-3d89-43b6-8297-fafeaad7c34f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b2290eb-9a51-47eb-aacc-ae26af687a88",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rechercher",
+      "targets": [
+        ["linkText=Rechercher", "linkText"],
+        ["css=.mw-ui-icon-wikimedia-search", "css:finder"],
+        ["xpath=//div[@id='p-search']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Sp%C3%A9cial:Recherche')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rechercher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59385599-9e18-4b48-b51e-302e670bc383",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.cdx-text-input__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "1ere guerre mondiale"
+    }, {
+      "id": "f35b3ff0-30f3-4346-8fea-6071a9472c51",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.cdx-text-input__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "7640bd4b-886e-418b-aca2-2b6e445274be",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5fb8d36a-2729-4ea8-8efe-38e4149e512b"]
+  }],
+  "urls": ["https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal"],
+  "plugins": []
+}

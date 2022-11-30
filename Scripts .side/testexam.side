@@ -1,0 +1,130 @@
+{
+  "id": "5fcb8b3e-5cd9-4599-844c-7eaf17c1ea86",
+  "version": "2.0",
+  "name": "testexam",
+  "url": "https://en.boardgamearena.com",
+  "tests": [{
+    "id": "e344f5ce-a18c-462d-be6f-d7155f94dc6a",
+    "name": "testinscription",
+    "commands": [{
+      "id": "3f390c41-1a01-43e9-b456-10009dfd9312",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4256d73e-fff0-40eb-b3a3-284bc17e8a58",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f795bf36-bb84-47ce-83a3-2c9091609245",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log in",
+      "targets": [
+        ["linkText=log in", "linkText"],
+        ["css=.bga-menu-bar__right-item", "css:finder"],
+        ["xpath=//a[contains(text(),'log in')]", "xpath:link"],
+        ["xpath=//div[@id='menubar-holder']/div/div/div[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/account')]", "xpath:href"],
+        ["xpath=//div[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e748d1bc-f460-44dc-9c04-f3c3b2a5a2b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=gotoregister_button",
+      "targets": [
+        ["id=gotoregister_button", "id"],
+        ["linkText=Register", "linkText"],
+        ["css=#gotoregister_button", "css:finder"],
+        ["xpath=//a[@id='gotoregister_button']", "xpath:attributes"],
+        ["xpath=//div[@id='loginregister_wrap']/div[4]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/account?page=newuser&src=login')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b559e43c-d958-4d03-b42c-9fd204c62c2e",
+      "comment": "",
+      "command": "click",
+      "target": "id=register_username",
+      "targets": [
+        ["id=register_username", "id"],
+        ["css=#register_username", "css:finder"],
+        ["xpath=//input[@id='register_username']", "xpath:attributes"],
+        ["xpath=//div[@id='registerbox']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38a3a393-dd31-4e45-9846-ccf2873cf436",
+      "comment": "",
+      "command": "type",
+      "target": "id=register_username",
+      "targets": [
+        ["id=register_username", "id"],
+        ["css=#register_username", "css:finder"],
+        ["xpath=//input[@id='register_username']", "xpath:attributes"],
+        ["xpath=//div[@id='registerbox']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "testinscription"
+    }, {
+      "id": "0f704bdd-96c9-4835-a65d-b34c2efae807",
+      "comment": "",
+      "command": "type",
+      "target": "id=register_email",
+      "targets": [
+        ["id=register_email", "id"],
+        ["css=#register_email", "css:finder"],
+        ["xpath=//input[@id='register_email']", "xpath:attributes"],
+        ["xpath=//div[@id='registerbox']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "mail.test@gmail.com"
+    }, {
+      "id": "c05fbc2e-4425-4fc1-a38a-48b554e037be",
+      "comment": "",
+      "command": "type",
+      "target": "id=register_password",
+      "targets": [
+        ["id=register_password", "id"],
+        ["css=#register_password", "css:finder"],
+        ["xpath=//input[@id='register_password']", "xpath:attributes"],
+        ["xpath=//div[@id='registerbox']/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "testpassword"
+    }, {
+      "id": "c51c7483-369d-42ec-8fa7-0ec1181d8f11",
+      "comment": "",
+      "command": "click",
+      "target": "css=#register_button > span",
+      "targets": [
+        ["css=#register_button > span", "css:finder"],
+        ["xpath=//a[@id='register_button']/span", "xpath:idRelative"],
+        ["xpath=//p[6]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Start playing now')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "47193449-7eb6-47df-b748-9112c2752e25",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e344f5ce-a18c-462d-be6f-d7155f94dc6a"]
+  }],
+  "urls": ["https://en.boardgamearena.com/"],
+  "plugins": []
+}
