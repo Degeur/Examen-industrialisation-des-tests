@@ -7,7 +7,7 @@
       ○ 3 tests (1 pour chaque fonctions) --> test_charger() test_extraire() 
                                               et on ne voit pas comment tester un affichage (3 eme fonction)
 
-● 2 Workflows Github (= 2 fichiers)
+● 2 Workflows Github (= 2 fichiers)  execapp.yml et testapp.yml dans .github\workflows
 
 ● 1 Script utilisant Selenium (ne doit pas être exécuté par la CI GithubAction !) --> script_titre.py
 
