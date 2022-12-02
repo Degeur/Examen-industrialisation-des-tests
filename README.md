@@ -4,7 +4,8 @@
 
       ○ 3 fonctions Python (ou +) --> fonctions : charger() extraire() afficher()
 
-      ○ 3 tests (1 pour chaque fonctions)
+      ○ 3 tests (1 pour chaque fonctions) --> test_charger() test_extraire() 
+                                              et on ne voit pas comment tester un affichage (3 eme fonction)
 
 ● 2 Workflows Github (= 2 fichiers)
 
